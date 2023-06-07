@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace ChallengesWithTestsMark8
 {
@@ -6,7 +7,7 @@ namespace ChallengesWithTestsMark8
     {
         public bool AreTwoNumbersTheSame(int num1, int num2)
         {
-            if(num1 == num2)
+            if (num1 == num2)
             {
                 return true;
             }
@@ -18,31 +19,44 @@ namespace ChallengesWithTestsMark8
 
         public double Subtract(double minuend, double subtrahend)
         {
-            throw new NotImplementedException();
+            return minuend - subtrahend;
+            //throw new NotImplementedException();
         }
 
         public int Add(int number1, int number2)
         {
-            throw new NotImplementedException();
+            return number1 + number2;
+
+            // throw new NotImplementedException();
         }
 
         public int GetSmallestNumber(int number1, int number2)
         {
+
+            return Math.Min(number1, number2);
+
+
             throw new NotImplementedException();
         }
 
         public long Multiply(long factor1, long factor2)
         {
+            return factor1 * factor2;
             throw new NotImplementedException();
         }
 
         public string GetGreeting(string nameOfPerson)
         {
+            return (string.IsNullOrEmpty(nameOfPerson)) ? "hello" : $"hello, {nameOfPerson}!";  
+
             throw new NotImplementedException();
         }
 
         public string GetHey()
         {
+            return "HEY!";
+
+            
             throw new NotImplementedException();
         }
     }
